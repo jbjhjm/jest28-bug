@@ -6,11 +6,12 @@
     "node": ">=16.17.0 <17"
   },
   "scripts": {
-    "with-ts-jest": "jest ./src/ts-jest/deptest.spec.ts -c ./src/ts-jest/jest.config.js",
-    "with-ngdevkit": "jest ./src/ts-jest/deptest.spec.ts -c ./src/ts-jest/jest.config.ngdevkit.js",
+    "ts-jest-without-nx": "jest ./src/ts-jest/deptest.spec.ts -c ./src/ts-jest/jest.config.js",
+    "ngdevkit-without-nx": "jest ./src/ts-jest/deptest.spec.ts -c ./src/ts-jest/jest.config.ngdevkit.js",
+    "ts-jest-with-nx": "nx test test-tsjest",
+    "ngdevkit-with-nx": "nx test test-ngdevkit",
     "postinstall": "ngcc --properties es2020 browser module main"
   },
-  "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "^14.2.2",
     "@angular-devkit/core": "^14.2.2",
