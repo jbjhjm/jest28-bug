@@ -1,0 +1,27 @@
+{
+  "name": "test-ngdevkit",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/test-ngdevkit/src",
+  "prefix": "lib",
+  "targets": {
+	"test": {
+		"executor": "@nrwl/jest:jest",
+		"outputs": ["coverage/libs/core/frontend-shared"],
+		"options": {
+			"jestConfig": "libs/core/frontend-shared/jest.config.js",
+			"passWithNoTests": true
+		}
+	},
+"lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/test-ngdevkit/**/*.ts",
+          "libs/test-ngdevkit/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

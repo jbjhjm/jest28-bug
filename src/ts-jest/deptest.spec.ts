@@ -3,7 +3,7 @@ import { DepTestClass, DepTestInterface } from './deptest-imports';
 import { InterfaceFromInterfaceOnlyModule,DUMMY } from './deptest-interface';
 
 export function MyDecorator():MethodDecorator {
-	return <T>(target,propertyKey,descriptor:TypedPropertyDescriptor<T>) => {DUMMY;}
+	return <T>(target,propertyKey,descriptor:TypedPropertyDescriptor<T>) => {}
 }
 
 export interface DepTestInlineInterface {

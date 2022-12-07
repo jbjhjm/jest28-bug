@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "test-ngdevkit": "libs/test-ngdevkit",
+    "test-tsjest": "libs/test-tsjest"
+  }
+}

@@ -1,10 +1,10 @@
-// const { getJestProjects } = require('@nrwl/jest');
+const { getJestProjects } = require('@nrwl/jest');
 
 module.exports = {
 	testRunner: 'jest-circus/runner',
 	globalSetup: 'jest-preset-angular/global-setup',
 	projects: [
-		// ...getJestProjects()
+		...getJestProjects()
 	],
 	globals: {
 		'ts-jest': {

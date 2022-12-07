@@ -5,11 +5,22 @@ const enableReport = !!process.env.JEST_REPORT;
 module.exports = {
 	...nxPreset,
 	testEnvironment: "jsdom",
-	setupFilesAfterEnv: [],
+	setupFilesAfterEnv: [
+		"jest-extended",
+		// __dirname+"/tools/testing/jest-extras/index.ts",
+	],
 	testMatch: [
+		// '**/+(*.)+(spec|test).+(ts|js)?(x)',
+		// bugfix as seen in https://github.com/nrwl/nx/issues/2815
 		'**/+(*.)+(spec|test).[tj]s?(x)',
 	],
 	coveragePathIgnorePatterns: ['/coverage/', '/dist/', '/node_modules/'],
+	// don't, this would always collect coverage from everywhere!
+	// collectCoverageFrom: [
+	// 	"**/apps/**",
+	// 	"**/libs/**",
+	// 	"**/tools/**",
+	// ],
 	globals: {
 		'VERSION':'jest-0.0',
 		'TIMESTAMP':0,
@@ -21,6 +32,7 @@ module.exports = {
 	},
 	coverageDirectory:'/coverage',
 	globalSetup: 'jest-preset-angular/global-setup',
+	//   rootDir:'J:\\Projects\\uz_edu_portal',
 	resolver: '@nrwl/jest/plugins/resolver',
 	moduleFileExtensions: ['ts', 'html', 'js', 'json', 'mjs'],
 	collectCoverage: true,
