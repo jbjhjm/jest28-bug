@@ -47,7 +47,7 @@
     "@angular-eslint/eslint-plugin": "15.0.0",
     "@angular-eslint/eslint-plugin-template": "15.0.0",
     "@angular-eslint/template-parser": "15.0.0",
-    "@angular/cli": "~14.2.0",
+    "@angular/cli": "~15.0.0",
     "@angular/compiler-cli": "15.0.2",
     "@angular/language-service": "15.0.2",
     "@nrwl/eslint-plugin-nx": "15.3.0",
@@ -61,4 +61,3 @@
     "ts-node": "10.9.1"
   }
 }
-
