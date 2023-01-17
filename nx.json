@@ -39,7 +39,6 @@
     },
     "defaultCollection": "@nrwl/angular"
   },
-  "defaultProject": "mpf-frontend",
   "generators": {
     "@nrwl/schematics:application": {
       "style": "scss",

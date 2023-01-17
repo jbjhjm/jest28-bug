@@ -1,3 +1,9 @@
+## Update: Issue resolved!
+
+Take a look at latest commit, with "jest-preset-angular": "12.2.4" and angular 15.1+ all test cases are passing fine again!
+
+## Initial issue
+
 Run `npm i`, then use these commands:
 
 - `npm run ts-jest-without-nx` - expected to work fine
