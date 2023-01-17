@@ -5,7 +5,7 @@
     "package.json": "*",
     "tslint.json": "*",
     "nx.json": "*",
-    "tsconfig.base.json": "*"
+    "tsconfig.json": "*"
   },
   "tasksRunnerOptions": {
     "default": {
@@ -39,7 +39,6 @@
     },
     "defaultCollection": "@nrwl/angular"
   },
-  "defaultProject": "mpf-frontend",
   "generators": {
     "@nrwl/schematics:application": {
       "style": "scss",
