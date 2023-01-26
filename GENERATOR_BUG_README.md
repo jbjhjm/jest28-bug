@@ -11,6 +11,12 @@ Console log shows arguments passed to the schematic.
 It is a schematic so nrwl shoul execute it in ng compat mode.
 But it does not work, the logged data will show arguments [FsTree, Schema] which is the signature of a nrwl generator.
 
+The test that should ensure compatibility does not check this in detail so was never aware of this issue.
+https://github.com/nrwl/nx/blob/d70b9ec7c61f6972f1834620b5732d6a499cf4c8/e2e/nx-misc/src/workspace.test.ts#L277
+
+Bug report:
+https://github.com/nrwl/nx/issues/14641
+
 ## Investigation
 
 I digged into the CLI source files and it seems that some required logic has been removed for this to work correctly:
